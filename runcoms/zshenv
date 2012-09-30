@@ -5,6 +5,39 @@
 #   Sorin Ionescu <sorin.ionescu@gmail.com>
 #
 
+# Aron's stuff
+
+export HISTFILE=~/.zshhistory
+export HISTSIZE=100000
+export SAVEHIST=100000
+
+setopt HIST_SAVE_NO_DUPS
+setopt INTERACTIVE_COMMENTS
+setopt SHARE_HISTORY
+setopt APPEND_HISTORY
+setopt INC_APPEND_HISTORY
+setopt EXTENDED_HISTORY
+setopt HIST_REDUCE_BLANKS
+unsetopt AUTO_REMOVE_SLASH
+
+bindkey '\e[A'  history-beginning-search-backward
+bindkey '\e[B'  history-beginning-search-forward
+bindkey '\e[C'  forward-char
+bindkey '\e[D'  backward-char
+bindkey '\eOA'  history-beginning-search-backward
+bindkey '\eOB'  history-beginning-search-forward
+bindkey '\eOC'  forward-char
+bindkey '\eOD'  backward-char
+
+for f in ~/.zshrc_d/*
+do
+    source $f
+done
+
+export WORKON_HOME=$HOME/.virtualenvs
+export VIRTUALENVWRAPPER_PYTHON=/usr/local/bin/python
+source /usr/local/share/python/virtualenvwrapper.sh
+
 #
 # Browser
 #
@@ -17,8 +50,8 @@ fi
 # Editors
 #
 
-export EDITOR='nano'
-export VISUAL='nano'
+export EDITOR='subl'
+export VISUAL='subl'
 export PAGER='less'
 
 #
