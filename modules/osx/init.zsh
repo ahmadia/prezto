@@ -29,6 +29,12 @@ function ql {
   (( $# > 0 )) && qlmanage -p "$@" &> /dev/null
 }
 
+# Open files in Emacs
+
+function emacs {
+  (( $# > 0 )) && open -a /Applications/Emacs.app "$@" &> /dev/null
+}
+
 # Delete .DS_Store and __MACOSX directories.
 function rm-osx-cruft {
   find "${@:-$PWD}" \( \

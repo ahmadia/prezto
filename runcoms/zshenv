@@ -17,8 +17,8 @@ fi
 # Editors
 #
 
-export EDITOR='nano'
-export VISUAL='nano'
+export EDITOR='emacs'
+export VISUAL='emacs'
 export PAGER='less'
 
 #
@@ -76,6 +76,9 @@ unset path_file
 
 # Set the list of directories that Zsh searches for programs.
 path=(
+  $HOME/.cabal/bin
+  /usr/local/share/python
+  /usr/local/cuda/bin
   /usr/local/{bin,sbin}
   /usr/{bin,sbin}
   /{bin,sbin}
