@@ -32,7 +32,7 @@ function ql {
 # Open files in Emacs
 
 function emacs {
-  (( $# > 0 )) && open -a /Applications/Emacs.app "$@" &> /dev/null
+  (( $# > 0 )) && open -a /Applications/Aquamacs.app "$@" &> /dev/null
 }
 
 # Delete .DS_Store and __MACOSX directories.
