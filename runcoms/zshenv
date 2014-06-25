@@ -42,12 +42,18 @@ typeset -gU cdpath fpath mailpath path
 
 # Set the list of directories that Zsh searches for programs.
 path=(
+  # this is total crap
+  $HOME/proteus-roams/darwin/bin
+  $HOME/hashdist/bin
   $HOME/.cabal/bin
   /usr/local/share/python
-  /usr/local/cuda/bin
+  /usr/local/opt/ruby/bin
   /usr/local/{bin,sbin}
   $path
+  /usr/local/{ossh,krb5,cuda}/bin
+  $HOME/Library/PackageManager/bin
 )
+
 
 #
 # Less

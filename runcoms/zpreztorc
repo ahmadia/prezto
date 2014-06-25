@@ -39,9 +39,9 @@ zstyle ':prezto:load' pmodule \
   'python' \
   'rsync' \
   'ruby' \
-  'ssh-agent' \
   'syntax-highlighting' \
-  'utility'
+  'utility' \
+  'matlab'
 
 #
 # Editor
@@ -111,10 +111,10 @@ zstyle ':prezto:module:prompt' theme 'sorin'
 #
 
 # Enable ssh-agent forwarding.
-zstyle ':prezto:module:ssh-agent' forwarding 'yes'
+#zstyle ':prezto:module:ssh-agent' forwarding 'yes'
 
 # Set ssh-agent identities to load.
-zstyle ':prezto:module:ssh-agent' identities 'id_rsa' 'id_dsa' 
+#zstyle ':prezto:module:ssh-agent' identities 'id_rsa' 'id_dsa' 
 
 #
 # Syntax Highlighting

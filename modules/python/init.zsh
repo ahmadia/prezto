@@ -47,4 +47,5 @@ fi
 #
 
 alias py='python'
-
+alias ip='ipython'
+alias ipn='ipython notebook'
