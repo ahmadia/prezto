@@ -30,8 +30,6 @@ zstyle -s ':prezto:module:git:status:ignore' submodules '_git_status_ignore_subm
 alias g='git'
 
 # Hub
-alias git='hub'
-
 alias hb='hub browse'
 
 # Branch (b)
@@ -127,6 +125,7 @@ alias gpa='git push --all'
 alias gpA='git push --all && git push --tags'
 alias gpt='git push --tags'
 alias gpc='git push --set-upstream origin "$(git-branch-current 2> /dev/null)"'
+alias gpC='git push --set-upstream origin "+$(git-branch-current 2> /dev/null)"'
 alias gpp='git pull origin "$(git-branch-current 2> /dev/null)" && git push origin "$(git-branch-current 2> /dev/null)"'
 
 # Rebase (r)

@@ -12,3 +12,8 @@ fi
 
 # Customize to your needs...
 
+scipy() {
+    export PATH=~/anaconda/bin:$PATH
+    cd ~/sandbox/teaching-numerics-with-notebooks
+}
+    	
